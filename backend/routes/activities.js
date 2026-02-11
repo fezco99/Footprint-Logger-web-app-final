@@ -145,3 +145,5 @@ router.get("/insight", auth, async (req, res) => {
   const analysis = await analyzeUser(req.user.id);
   res.json(analysis);
 });
+
+module.exports = router;
